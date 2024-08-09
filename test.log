@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  6 AUG 2024 14:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.8.3)  9 AUG 2024 11:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,16 +1132,89 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks50
 \@floatcapt=\box84
 )
-\c@theorem=\count344
-\c@problem=\count345
-\c@proposition=\count346
-\c@lemma=\count347
-\c@example=\count348
-\c@rem=\count349
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count344
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+143.
+
+\mult@box=\box85
+\multicol@leftmargin=\dimen333
+\c@unbalance=\count345
+\c@collectmore=\count346
+\doublecol@number=\count347
+\multicoltolerance=\count348
+\multicolpretolerance=\count349
+\full@width=\dimen334
+\page@free=\dimen335
+\premulticols=\dimen336
+\postmulticols=\dimen337
+\multicolsep=\skip73
+\multicolbaselineskip=\skip74
+\partial@page=\box86
+\last@line=\box87
+\maxbalancingoverflow=\dimen338
+\mult@rightbox=\box88
+\mult@grightbox=\box89
+\mult@firstbox=\box90
+\mult@gfirstbox=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\c@minrows=\count350
+\c@columnbadness=\count351
+\c@finalcolumnbadness=\count352
+\last@try=\dimen339
+\multicolovershoot=\dimen340
+\multicolundershoot=\dimen341
+\mult@nat@firstbox=\box128
+\colbreak@box=\box129
+\mc@col@check@num=\count353
+)
+\c@theorem=\count354
+\c@problem=\count355
+\c@proposition=\count356
+\c@lemma=\count357
+\c@example=\count358
+\c@rem=\count359
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 0.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (./test.aux)
 \openout1 = `test.aux'.
@@ -1228,16 +1301,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
-\scratchdimen=\dimen333
-\scratchbox=\box85
-\nofMPsegments=\count351
-\nofMParguments=\count352
+\scratchcounter=\count360
+\scratchdimen=\dimen342
+\scratchbox=\box130
+\nofMPsegments=\count361
+\nofMParguments=\count362
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count353
-\MPscratchDim=\dimen334
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen343
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1248,7 +1321,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count356
+\c@lstlisting=\count366
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 50.
@@ -1296,59 +1369,55 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+[][] [] \OT1/txr/m/n/12 = 4 \OMS/txsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-$[][] [] \OT1/txr/m/n/12 = 4 \OMS/txsy/m/n/12 ^^@
+Underfull \hbox (badness 1859) in paragraph at lines 92--93
+[]\OT1/txr/m/n/12 If $\OML/txmi/m/it/12 S[]; S[]; S[]::::::; S[]$ \OT1/txr/m/n/
+12 are the sums of in-fi-
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 113--114
+Underfull \hbox (badness 2799) in paragraph at lines 117--118
 []\OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 a[]; a[]; :::; a[]$ \OT1/txr/m/n/12 be
  pos-i-tive real num-bers
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 113--114
-\OT1/txr/m/n/12 in ge-o-met-ric pro-gres-sion. For each n,let
+Underfull \hbox (badness 4168) in paragraph at lines 117--118
+\OT1/txr/m/n/12 in ge-o-met-ric pro-gres-sion. For each $\OML/txmi/m/it/12 n$\O
+T1/txr/m/n/12 ,let
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 113--114
-\OML/txmi/m/it/12 A[]; G[]; H[]$ \OT1/txr/m/n/12 be re-spec-tively, the arith-m
-etic
+Underfull \hbox (badness 4229) in paragraph at lines 117--118
+\OT1/txr/m/n/12 ge-o-met-ric mean ,and har-monic mean of
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 123.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 130.
 
 LaTeX Font Info:    Trying to load font information for OML+txr on input line 1
-23.
+30.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 123.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 130.
 
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 123.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 130.
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 131--134
+Underfull \hbox (badness 3240) in paragraph at lines 139--142
 \OT1/txr/m/n/12 arith-metic pro-gres-sion (A.P) whose first term
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 131--134
-\OT1/txr/m/n/12 is r and the com-mon dif-fer-en-ceis (2r-1).Let
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
 
@@ -1362,13 +1431,13 @@ Package rerunfilecheck Info: File `test.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30513 strings out of 476091
- 600122 string characters out of 5794082
+ 30648 strings out of 476091
+ 602436 string characters out of 5794082
  1888330 words of memory out of 5000000
- 50198 multiletter control sequences out of 15000+600000
+ 50330 multiletter control sequences out of 15000+600000
  573282 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,6n,96p,1172b,690s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,6n,96p,1172b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1377,7 +1446,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on test.pdf (2 pages, 57731 bytes).
+Output written on test.pdf (2 pages, 58184 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
