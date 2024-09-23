@@ -1,0 +1,95 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{1.2.23}
+\author{EE24BTECH11016 - Dhwanith M Doddahundi}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+
+
+\textbf{Question: }\\
+
+A motorboat is racing towards north at $25 km/h$ and the water current in that region
+is $10 km/h$ in the direction of $60\degree$ east of south. Find the resultant velocity of the
+boat.\\
+\solution { 
+\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{Input parameters}
+  \label{tab1.1.9.2}
+\end{table}
+\begin{align}
+\vec v_c&= 10\myvec{\sin{60\degree}\\ -\cos{60\degree}}\\
+\implies v_c&= 10\myvec{\frac{\sqrt{3}}{2}\\ \frac{-1}{2}}\\
+\implies v_c&= \myvec{5\sqrt{3}\\ -5}\\
+\implies \therefore v_r&= v_b + v_c\\
+\implies v_r&= \myvec{0 \\ 25}+\myvec{5\sqrt{3}\\ -5}\\
+\implies v_r &= \myvec{5\sqrt{3}\\ 20}\\
+\implies \norm{v_r}&= \sqrt{v_r^\top v_r}\\
+\implies \norm{v_r}&=\sqrt{\brak{5\sqrt{3}}^2+\brak{20}^2}\\
+\implies \norm{v_r}&=\sqrt{475}\approx 21.8 km/h
+ \end{align}
+ Let the angle of the resultant vector be $\theta$ from north direction
+ \begin{align}
+     \tan{\theta}&= \frac{5\sqrt{3}}{20}\\
+     \implies \theta &= \tan^{-1}{\frac{\sqrt{3}}{4}}\approx 23.4\degree
+ \end{align}
+ So, the resultant velocity vector $v_r$ is $21.8 km/h$ at an angle of $23.4\degree$ from north direction.
+ \begin{figure}[!ht]
+    \centering
+	\includegraphics[width=1\textwidth]{plots/plot.png}
+    \caption{Resultant velocity vector of boat}
+    \label{fig:plot}
+\end{figure}  
+   }
+\end{document}
