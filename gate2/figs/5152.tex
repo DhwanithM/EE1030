@@ -1,0 +1,96 @@
+\begin{figure}[H]
+\usetikzlibrary{lindenmayersystems} 
+\centering
+\resizebox{6cm}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Huge]
+
+\draw [line width=0.7pt, short] (-0.25,19.5) -- (7,19.5);
+\draw [line width=0.7pt, short] (7,19.5) -- (7,20.5);
+\draw [line width=0.7pt, short] (7,20.5) -- (8.5,20.5);
+\draw [line width=0.7pt, short] (8.5,20.5) -- (8.5,19.75);
+\draw [line width=0.7pt, short] (8.5,19.5) -- (17,19.5);
+\draw [line width=0.7pt, short] (0.75,19.5) -- (0.75,20.75);
+\draw [line width=0.7pt, short] (0.75,20.75) -- (2.75,20.75);
+\draw [line width=0.7pt, short] (2.75,20.75) -- (2.75,19.5);
+\draw [line width=0.7pt, short] (1.25,20.75) -- (1.25,22.25);
+\draw [line width=0.7pt, short] (2,21) -- (2,20.75);
+\draw [line width=0.7pt, short] (2,21) -- (2,22.25);
+\draw [line width=0.7pt, short] (1.25,22.25) -- (2,22.25);
+\draw [line width=0.7pt, short] (1.5,22.25) -- (1.5,23);
+\draw [line width=0.7pt, short] (1.5,23) -- (1.75,23);
+\draw [line width=0.7pt, short] (1.75,23) -- (1.75,22.25);
+\draw [line width=0.7pt, short] (0.75,23) -- (15.5,23);
+\draw [line width=0.7pt, short] (13.5,22) -- (13.5,19.5);
+\draw [line width=0.7pt, short] (15.75,22) -- (15.75,19.75);
+\draw [line width=0.7pt, short] (15.75,20) -- (15.75,19.75);
+\draw [line width=0.7pt, short] (15.75,20) -- (15.75,19.5);
+\draw [line width=0.7pt, short] (13.5,22) -- (15.75,22);
+\draw [line width=0.7pt, short] (14.5,23) -- (14.25,22);
+\draw [line width=0.7pt, short] (14.5,23) -- (15,22);
+\draw [line width=0.7pt, short] (15.5,23) -- (16.25,23);
+\draw [line width=0.7pt, short] (0.75,23) -- (-0.25,23);
+\draw [line width=0.7pt, short] (-0.25,23) -- (-0.25,24);
+\draw [line width=0.7pt, short] (-0.25,24) -- (16.25,24);
+\draw [line width=0.7pt, short] (16.25,24) -- (16.25,23);
+\draw [line width=0.7pt, short] (8.5,19.75) -- (8.5,15);
+\draw [line width=0.7pt, short] (7,19.5) -- (7,15);
+\draw [line width=0.7pt, short] (7,15) -- (8.5,15);
+\draw [line width=0.7pt, short] (-0.25,19.5) -- (-1.5,19.5);
+\draw [line width=0.7pt, short] (7,24) -- (9,24);
+\draw [line width=0.7pt, short] (7.25,24) -- (7.25,19.75);
+\draw [line width=0.7pt, short] (8.5,24) -- (10.5,24);
+\draw [line width=0.7pt, short] (8.25,24) -- (8.25,19.75);
+\draw [line width=0.7pt, short] (6.5,24) -- (6.5,24.5);
+\draw [line width=0.7pt, short] (6.5,24.5) -- (9,24.5);
+\draw [line width=0.7pt, short] (9,24.5) -- (9,24);
+\draw [line width=0.7pt, short] (-1,19.5) -- (-1.5,18.75);
+\draw [line width=0.7pt, short] (-1,19.5) -- (-0.5,18.75);
+\draw [line width=0.7pt, short] (-0.5,19.5) -- (-1,18.75);
+\draw [line width=0.7pt, short] (-0.5,19.5) -- (0.25,18.75);
+\draw [line width=0.7pt, short] (0.25,19.5) -- (-0.25,18.75);
+\draw [line width=0.7pt, short] (0.25,19.5) -- (1,18.75);
+\draw [line width=0.7pt, short] (0.25,18.75) -- (1,19.5);
+\draw [line width=0.7pt, short] (7,24.5) -- (7,25);
+\draw [line width=0.7pt, short] (7,25) -- (7.5,25);
+\draw [line width=0.7pt, short] (7.5,25) -- (7.5,24.5);
+\draw [line width=0.7pt, short] (8,24.5) -- (8,25);
+\draw [line width=0.7pt, short] (8,25) -- (8.5,25);
+\draw [line width=0.7pt, short] (8.5,25) -- (8.5,24.5);
+\draw [line width=0.7pt, short] (7.25,25) -- (7.25,25.5);
+\draw [line width=0.7pt, short] (8.25,25) -- (8.25,25.5);
+\draw [line width=0.7pt, dashed] (7.75,23) -- (7.75,20.5);
+\draw [line width=0.7pt, dashed] (7.75,24.5) -- (7.75,26.5);
+\draw [line width=0.7pt, <->, >=Stealth] (7.75,26.25) -- (2,26.25)node[pos=0.5, fill=white]{5m};
+\draw [line width=0.7pt, <->, >=Stealth] (7.75,26.25) -- (14.25,26.25)node[pos=0.5, fill=white]{5m};
+\draw [line width=0.7pt, dashed] (14.5,19) -- (14.5,26.75);
+\draw [line width=0.7pt, dashed] (1.75,24) -- (1.75,27.25);
+\draw [line width=0.7pt, dashed] (1.5,20.75) -- (1.5,18.25);
+\node [font=\Large] at (2,18) {Saturated dense sand};
+\node [font=\Large] at (0.75,17) {$\gamma_{sat} = 18N/m^3$};
+\node [font=\Large] at (0.75,16.3) {$\phi = 35^{\degree}$};
+\node [font=\Large] at (2.4,16.3) {$c = 0kPa$};
+\node [font=\Large] at (2.29,16.3) {$,$};
+\node [font=\Large] at (0,15.7) {$N_{\gamma} = 40 $};
+\node [font=\Large] at (0.75,15.2) {$\gamma_w = 10kN/m^3$};
+\draw [line width=0.7pt, <->, >=Stealth] (6.5,19.5) -- (6.5,15)node[pos=0.5, fill=white]{5m};
+\node [font=\LARGE] at (4.5,22.5) {Concrete block};
+\node [font=\LARGE] at (4.5,21.75) {$1.5 \times 1.0 \times 0.6m$};
+\node [font=\LARGE] at (5.75,21) {high};
+\draw [line width=0.7pt, ->, >=Stealth] (3.5,21.25) -- (2.5,20);
+\draw [line width=0.7pt, ->, >=Stealth] (9.25,18) -- (7.75,18);
+\node [font=\LARGE] at (11.75,23.5) {Rigid Steel Beam};
+\node [font=\LARGE] at (13.25,18) {500 mm diameter bored pile };
+\node [font=\LARGE] at (11.75,17) {Angle of friction };
+\node [font=\LARGE] at (15.75,17) {$(\delta) = 24^{\degree}$};
+\node [font=\LARGE] at (12.25,16) {Earth pressure coefficient };
+\node [font=\LARGE] at (17,16) {(K) = 1.5};
+\node [font=\LARGE] at (11,20.25) {G.W.T};
+\draw [line width=0.7pt, ->, >=Stealth] (9.75,19.75) -- (9.75,19.5);
+\draw [line width=2pt, ->, >=Stealth] (13.75,18.5) -- (15.75,18.5);
+\draw [line width=2pt, ->, >=Stealth] (13.75,18.5) -- (15.75,18.5);
+\end{circuitikz}
+}
+
+\label{fig:my_label}
+\end{figure}
