@@ -1,0 +1,83 @@
+\begin{center}
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+% Shading the rectangles
+\fill[red] (4.5,6.75) rectangle (5,10.25); % First rectangle in red
+\fill[red] (6.25,6.75) rectangle (6.75,11.25); % Second rectangle in blue
+\fill[red] (8,9.75) rectangle (8.5,6.75); % First rectangle in red
+\fill[red] (9.75,6.75) rectangle (10.25,10.75); % Second rectangle in blue
+\fill[blue]  (10.25,11.75) rectangle (10.75,6.75); % First rectangle in red
+\fill[blue]  (8.5,10.75) rectangle (9,6.75); % First rectangle in red
+\fill[blue]  (6.75,10.25) rectangle (7.25,6.75); % First rectangle in red
+\fill[blue]  (5,9.25) rectangle (5.5,6.75); % First rectangle in red
+
+
+\draw (3.75,12.25) to[short] (10,12.25);
+\draw (9,12.25) to[short] (11,12.25);
+\draw (3.75,12.25) to[short] (3.75,6.75);
+\draw (3.75,6.75) to[short] (11.25,6.75);
+\draw (11.25,6.75) to[short] (11.25,12.25);
+\draw (10.75,12.25) to[short] (11.25,12.25);
+\draw [ line width=0.2pt](3.75,11.75) to[short] (11.25,11.75);
+\draw [ line width=0.2pt](3.75,11.25) to[short] (11.25,11.25);
+\draw [ line width=0.2pt](3.75,10.75) to[short] (11.25,10.75);
+\draw [ line width=0.2pt](3.75,10.25) to[short] (11.25,10.25);
+\draw [ line width=0.2pt](3.75,9.75) to[short] (11.25,9.75);
+\draw [ line width=0.2pt](3.75,9.25) to[short] (11.25,9.25);
+\draw [ line width=0.2pt](3.75,8.75) to[short] (11.25,8.75);
+\draw [ line width=0.2pt](3.75,8.25) to[short] (11.25,8.25);
+\draw [ line width=0.2pt](3.75,7.75) to[short] (11.25,7.75);
+\draw [ line width=0.2pt](3.75,7.25) to[short] (11.25,7.25);
+\node [font=\tiny] at (9,10.75) {};
+\node [font=\small] at (3.5,12.25) {55};
+\node [font=\small] at (3.5,11.75) {50};
+\node [font=\small] at (3.5,11.25) {45};
+\node [font=\small] at (3.5,10.75) {40};
+\node [font=\small] at (3.5,10.25) {35};
+\node [font=\small] at (3.5,9.75) {30};
+\node [font=\small] at (3.5,9.25) {25};
+\node [font=\small] at (3.5,8.75) {20};
+\node [font=\small] at (3.5,8.25) {15};
+\node [font=\small] at (3.5,7.75) {10};
+\node [font=\small] at (3.5,7.25) {5};
+\node [font=\small] at (6,12) {Revenue};
+\node [font=\small] at (8.5,12) {Expenditure};
+\fill[red] (5.1,11.9) rectangle (5.3,12.1);
+\fill[blue] (7.5,11.9) rectangle (7.7,12.1);
+\node [font=\small] at (3.5,6.75) {0};
+\draw [ line width=0.5pt](4.5,6.75) to[short] (4.5,10.25);
+\draw [ line width=0.5pt](5,10.25) to[short] (5,6.75);
+\draw [ line width=0.5pt](5.5,9.25) to[short] (5.5,6.75);
+\draw [ line width=0.5pt](4.5,10.25) to[short] (5,10.25);
+\draw [ line width=0.5pt](5,9.25) to[short] (5.5,9.25);
+\draw [ line width=0.5pt](6.25,6.75) to[short] (6.25,11.25);
+\draw [ line width=0.5pt](6.75,11.25) to[short] (6.75,6.75);
+\draw [ line width=0.5pt](7.25,10.25) to[short] (7.25,6.75);
+\draw [ line width=0.5pt](6.25,11.25) to[short] (6.75,11.25);
+\draw [ line width=0.5pt](6.75,10.25) to[short] (7.25,10.25);
+\draw [ line width=0.5pt](8,6.75) to[short] (8,9.75);
+\draw [ line width=0.5pt](8.5,9.75) to[short] (8.5,6.75);
+\draw [ line width=0.5pt](9,6.75) to[short] (9,10.75);
+\draw [ line width=0.5pt](8.5,9.75) to[short] (8.5,10.75);
+\draw [ line width=0.5pt](8,9.75) to[short] (8.5,9.75);
+\draw [ line width=0.5pt](8.5,10.75) to[short] (9,10.75);
+\draw [ line width=0.5pt](9.75,6.75) to[short] (9.75,10.75);
+\draw [ line width=0.5pt](10.25,6.75) to[short] (10.25,11.75);
+\draw [ line width=0.5pt](10.75,11.75) to[short] (10.75,6.75);
+\draw [ line width=0.5pt](9.75,10.75) to[short] (10.25,10.75);
+
+\node [font=\small] at (5,6.5) {Company P};
+\node [font=\small] at (6.75,6.5) {Company Q};
+\node [font=\small] at (8.5,6.5) {Company R};
+\draw [ line width=0.5pt](10.25,11.75) to[short] (10.75,11.75);
+\node [font=\small] at (10.25,6.5) {Company S};
+\node [font=\small] at (7.25,12.75) {Revenue and Expenditure (in million rupees) of four};
+\node [font=\small] at (6.75,12.5) {companies P,Q,R and S in 2015};
+\node [font=\small, rotate around={90:(0,0)}] at (3,9.75) {Revenue /Expenditure (in million rupees)};
+\end{circuitikz} 
+}% 
+
+
+\end{center}
