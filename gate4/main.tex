@@ -1,0 +1,213 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\usepackage{float}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2024-PH- 40-52}
+\author{EE24BTECH11016 - DHWANITH M DODDAHUNDI}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{39}
+\item In a parallel plate capacitor, the plate at $x=0$ is grounded and the plate at $x=d$ is
+maintained at a potential $V_{0}$ . The space between the two plates is filled with a linear
+dielectric of permittivity $\epsilon=\epsilon_{0}\brak{1+\frac{x}{d}}$, where $\epsilon_{0}$ is the permittivity of free space.
+Neglecting the edge effects, the electric field $(\Vec{\overrightarrow{E}})$ inside the capacitor is
+\begin{enumerate}
+    \item $-\frac{V_{0}}{(d+x)ln 2}\hat{x}$
+    \item $-\frac{V_{0}}{d}\hat{x}$
+    \item $-\frac{V_{0}}{(d+x)}\hat{x}$
+    \item $-\frac{V_{0}d}{(d+x)x}\hat{x}$
+\end{enumerate}
+\item The equation of motion for the forced simple harmonic oscillator is \\
+$\Ddot{x}(t)+\omega^{2}x(t)=F\cos{(\omega t)}$ \\
+    where $x(t=0)=0$ and $\Dot{x}(t=0)=0$. Which one of the following options is
+correct?
+    \begin{enumerate}
+        \item $x(t)\propto t\sin{(\omega t)}$
+        \item $x(t)\propto t\cos{(\omega t)}$
+        \item $x(t)=\infty$
+        \item $x(t)\propto e^{\omega t}$
+    \end{enumerate}
+    \item An atom is subjected to a weak uniform magnetic field $\Vec{\overrightarrow{B}}$. The number of lines in its Zeeman spectrum for transition from $n=2,l=1$ to $n=1,l=0$ is
+    \begin{enumerate}
+        \item 8
+        \item 10
+        \item 12
+        \item 5
+    \end{enumerate}
+    \item Consider two matrices: P=$\myvec{ 1 && 2 \\ 0 && 1}$ and Q=$\myvec{1 && 0 \\ 0 && 1}$ \\
+    Which of the following statement is/are true?
+    \begin{enumerate}
+        \item P and Q have same set of eigenvalues
+        \item P and Q commute with each other
+        \item P and Q have different sets of linearly independent eigenvectors
+        \item P is diagonalizable
+    \end{enumerate}
+    \item An infinite one dimensional lattice extends along $x$-axis. At each lattice site there
+exists an ion with spin $\frac{1}{2}$. The spin can point either in +$z$ or -$z$ direction only. Let
+$S_P, S_F,$ and $S_A$ denote the entropies of paramagnetic, ferromagnetic and
+antiferromagnetic configurations, respectively. Which of the following relation is/are true?
+\begin{enumerate}
+    \item $S_P>S_F$
+    \item $S_A>S_F$
+    \item $S_A=4S_F$
+    \item $S_P>S_A$
+\end{enumerate}
+\item Cosider a vector field $\Vec{\overrightarrow{F}}=(2xz+3y^2)\hat{y}+4yz^2\hat{z}$. The closed path 
+($\Gamma:A\rightarrow B\rightarrow C\rightarrow D\rightarrow A$) in $z=0$ plane is shown in figure. \\
+\begin{figure}[H]
+    \centering
+    \input{figs/45.tex}
+\end{figure}
+
+$\oint_\Gamma \Vec{\overrightarrow{F}}.\Vec{\overrightarrow{dl}}$ denotes the line integral of $\Vec{\overrightarrow{F}}$ along the closed path $\Gamma$. Which of the following option is/are true?
+\begin{enumerate}
+    \item $\oint_\Gamma \Vec{\overrightarrow{F}}\cdot\Vec{\overrightarrow{dl}}=0$
+    \item $\Vec{\overrightarrow{F}}$ is non-conservative
+    \item $\Vec{\overrightarrow{\nabla}}\cdot\Vec{\overrightarrow{F}}=0$
+    \item  $\Vec{\overrightarrow{F}}$ can be written as the gradient of a scalar field
+\end{enumerate}
+\item Two point charges of charge +$q$ each are placed a distance 2$d$ apart. A grounded
+solid conducting sphere of radius $a$ is placed midway between them.
+Assume $a^2<<d^2$. Which of the following statement is/are true?
+\begin{enumerate}
+    \item  If $a>\frac{d}{8}$ the net force acting on the charges is directed towards each other
+    \item The potential at the surface of the sphere is zero
+    \item Total induced charge on the sphere is $\brak{-\frac{2aq}{d}}$
+    \item The potential at the center of the sphere is non-zero
+\end{enumerate}
+\item A particle of mass $m$ is moving in the potential  \\
+  $ V(x)= \begin{cases} V_0+\frac{1}{2}m\omega_0^2x^2 & x>0 \\ \infty & x\leq0 \end{cases}$ \\
+Figures P, Q, R and S show different combinations of the values of $\omega_0$ and $V_0$ . \\ 
+\begin{figure}[H]
+    \centering
+    \resizebox{0.7\textwidth}{!}{\input{figs/47.tex}}
+\end{figure}
+
+$E_j^{(P)},E_j^{(Q)},E_j^{(R)}$ and $E_j^{(S)}$ with $j=0,1,2,\cdots$ are the eigen-energies of the $j$-th level
+for the potentials shown in figures P, Q, R and S, respectively. Which of the statement is/are true? 
+\begin{enumerate}
+\begin{multicols}{2}
+    \item $E_0^{(P)}=E_0^{(Q)}$
+    \item $E_0^{(Q)}=E_0^{(S)}$
+    \item $E_0^{(P)}=E_0^{(R)}$
+    \item $E_0^{(R)}\neq E_0^{(Q)}$
+    \end{multicols}
+\end{enumerate}
+\item The non-relativistic Hamiltonian for a single electron atom is 
+\begin{center}
+    {$H_0=\frac{p^2}{2m}-V(r)$ \\}
+\end{center}
+where $V(r)$ is the Coulomb potential and $m$ is the mass of the electron. Considering
+the spin-orbit interaction term
+\begin{center}
+     {$H'=\frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}\Vec{\overrightarrow{L}}\cdot\Vec{\overrightarrow{S}} $ \\ }
+\end{center}
+  added to $H_0$ , which of the following statement is/are true?
+  \begin{enumerate}
+      \item $H'$ commutes with $L^2$
+      \item $H'$ commutes with $L_z$ and $S_z$
+      \item For a given value of principal quantum number $n$ and orbital angular momentum
+quantum number $l$, there are $2(2l+1)$ degenerate eigenstates of $H_0$
+\item $H_0,L^2,S^2,L_z$ and $S_z$ have a set of simultaneous eigenstates 
+ \end{enumerate}
+ \item Decays of mesons and baryons can be categorized as weak, strong and
+electromagnetic decays depending upon the interactions involved in the processes.
+Which of the following option is/are true?
+\begin{enumerate}
+    \item $\pi^0\rightarrow\gamma\gamma   $      is a weak decay
+    \item $\Lambda^0\rightarrow\pi^0+p$     is an electromagnetic decay
+    \item $K^0\rightarrow\pi^++\pi^-$  is a weak decay
+    \item $\nabla^{++}\rightarrow p+\pi^+$ is a strong decay
+\end{enumerate}
+\item An extrinsic semiconductor shown in figure carries a current of $2mA$ along its
+length parallel to +$x$ axis \\
+\begin{figure}[H]
+    \centering
+    \input{figs/50.tex}
+\end{figure}
+When the majority charge carrier concentration is $12.5\times10^{13}$ $cm^{-3}$ and the
+sample is exposed to a constant magnetic field applied along the +$z$ direction, a
+Hall voltage of 20 mV is measured with the negative polarity at $y=0$ plane.
+Take the electric charge as $1.6\times10^{-19}$C. The concentration of minority charge
+carrier is negligible. Which of the following statement is/are true?
+\begin{enumerate}
+    \item The majority charge carrier is electron
+    \item The magnitude of the applied magnetic field is 1 Tesla
+    \item The electric field corresponding to the Hall voltage is in the +$y$ direction
+    \item The magnitude of Hall coefficient is 50,000 $m^3C^{-1}$
+\end{enumerate}
+\item $A^\alpha$ and $B_\beta$ $(\alpha,\beta=1,2,3,\cdots,n)$ are contravariant and covariant vectors,
+respectively. By convention, any repeated indices are summed over. Which of the
+following expression is/are tensors?
+\begin{enumerate}
+    \item $A^\alpha B_\beta$
+    \item $\frac{A^\alpha B_\beta}{A^\alpha B_\alpha}$
+    \item $\frac{A_\alpha}{B_\beta}$
+    \item $A^\alpha+ B_\beta$
+\end{enumerate}
+\item The temperature T dependence of magnetic susceptibility $\gamma$ (Column I) of certain
+magnetic materials (Column II) are given below. Which of the following option
+is/are correct? \\
+\begin{figure}[H]
+    \centering
+    \input{figs/52.tex}
+\end{figure}
+\begin{enumerate}
+    \item 2 - P, 4 - Q, 3 - S
+        \item 4 - P, 1 - Q, 2 - R
+    \item 4 - Q, 2 - R, 1 - S
+    \item 3 - P, 4 - Q, 2 - R
+
+\end{enumerate}
+\end{enumerate}
+\end{document}n
