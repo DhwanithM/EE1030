@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}Mathematical Background}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Eigenvalues and Eigenvectors}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The QR Algorithm}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Hessenberg Reduction}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Complex Eigenvalues}{3}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Algorithm Implementation}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Code Overview}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Practical Considerations}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Example and Results}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Example 1: Non-Symmetric matrix}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Example 2: Symmetric Matrix}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Time Complexity Analysis}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Hessenberg Reduction}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}QR Iterations}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Other Insights}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Memory Usage}{5}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Convergence Rate}{5}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Suitability for Different Types of Matrices}{5}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Comparison of Algorithms}{5}{section.7}%
+\contentsline {subsection}{\numberline {7.1}QR Algorithm vs. Jacobi Method}{5}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}QR Algorithm vs. Divide and Conquer}{6}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}QR Algorithm vs. Lanczos Algorithm}{6}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Error Analysis}{6}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Sources of Error}{6}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Mitigation Strategies}{6}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Advantages of the QR Algorithm}{6}{section.9}%
+\contentsline {subsection}{\numberline {9.1}General Benefits}{6}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Efficiency with Hessenberg Reduction}{6}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Applications}{6}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Future Directions}{6}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Conclusion}{7}{section.10}%
+\contentsline {section}{\numberline {11}References}{7}{section.11}%
+\contentsline {section}{\numberline {A}Code Listing}{8}{appendix.A}%

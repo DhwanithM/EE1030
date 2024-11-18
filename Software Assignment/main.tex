@@ -1,0 +1,178 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\title{\textbf{Eigenvalue Computation Using the QR Algorithm with Hessenberg Reduction}}
+\author{DHWANITH M DODDAHUNDI - EE24BTECH11016}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Eigenvalue computation is a fundamental operation in numerical linear algebra, with applications in engineering, physics, and data science. The QR algorithm, combined with Hessenberg reduction, is a robust method for finding eigenvalues of general square matrices. This report discusses the algorithm, its implementation, mathematical foundation, and advantages, and compares it to alternative methods.
+
+\section{Mathematical Background}
+\subsection{Eigenvalues and Eigenvectors}
+Eigenvalues are solutions to the characteristic equation \( \det(A - \lambda I) = 0 \), where \( A \) is a square matrix and \( \lambda \) represents the eigenvalues. Eigenvectors satisfy \( A \mathbf{x} = \lambda \mathbf{x} \).
+
+\subsection{The QR Algorithm}
+The QR algorithm iteratively decomposes \( A_k \) into \( A_k = Q_k R_k \), where \( Q_k \) is orthogonal and \( R_k \) is upper triangular. The next iteration is computed as \( A_{k+1} = R_k Q_k \). Convergence ensures that \( A_k \) becomes nearly upper triangular, with eigenvalues on the diagonal.
+
+\subsection{Hessenberg Reduction}
+Hessenberg reduction transforms \( A \) into a similar matrix \( H \), which has zeros below the first subdiagonal. This simplifies the QR decomposition and reduces computational cost.
+
+\subsection{Complex Eigenvalues}
+For \( 2 \times 2 \) blocks representing complex eigenvalues, the eigenvalues are roots of \( \lambda^2 - (\text{trace})\lambda + (\text{determinant}) = 0 \), calculated as:
+\[
+\lambda_{1,2} = \frac{\text{trace}}{2} \pm \sqrt{\left(\frac{\text{trace}}{2}\right)^2 - \text{determinant}}.
+\]
+
+\section{Algorithm Implementation}
+\subsection{Code Overview}
+The QR algorithm with Hessenberg reduction was implemented in C. Key highlights include:
+- Dynamic memory allocation for flexibility.
+- Modular design with functions for Hessenberg reduction, QR decomposition, and matrix multiplication.
+
+\subsection{Practical Considerations}
+Convergence tolerance was set to \( 10^{-6} \), ensuring accurate results without excessive computation. The algorithm was capped at 1000 iterations.
+
+\section{Example and Results}
+\subsection{Example 1: Non-Symmetric matrix}
+The input matrix is:
+\[
+A = \begin{bmatrix}
+1 & 2 & 5 \\
+4 & 5 & 8 \\
+2 & 4 & 6
+\end{bmatrix}.
+\]
+
+The intermediate Hessenberg form is:
+\[
+H = \begin{bmatrix}
+1.0000 & 4.0249 & 3.5777 \\
+4.4721 & 10.0000 & 6.0000 \\
+0.0000 & 2.0000 & 1.0000
+\end{bmatrix}.
+\]
+
+After convergence, the eigenvalues are:
+\begin{itemize}
+    \item \( \lambda_1 = 12.7778 \)
+    \item \( \lambda_2 = -0.3889 + 0.8876i \)
+    \item \( \lambda_3 = -0.3889 - 0.8876i \)
+\end{itemize}
+\subsection{Example 2: Symmetric Matrix}
+The input matrix is
+\[
+B = \begin{bmatrix}
+4 & 1 & 2 \\
+1 & 3 & 1 \\
+2 & 1 & 5
+\end{bmatrix}
+\]
+
+For symmetric matrices, the Hessenberg form is tridiagonal:
+\[
+H = \begin{bmatrix}
+4.0000 & 2.2361 & 0.0000 \\
+2.2361 & 5.4000 & 0.2000 \\
+0.0000 & 0.2000 & 2.6000
+\end{bmatrix}
+\]
+
+After QR iterations, the eigenvalues are:
+\begin{itemize}
+    \item \( \lambda_1 = 7.048917 \)
+    \item \( \lambda_2 =  2.643104 \)
+    \item \( \lambda_3 = 2.307979 \)
+\end{itemize}
+
+\section{Time Complexity Analysis}
+\subsection{Hessenberg Reduction}
+Hessenberg reduction has a complexity of \( O(N^3) \) for dense \( N \times N \) matrices. It reduces computational overhead in subsequent QR steps.
+
+\subsection{QR Iterations}
+Each QR step has a complexity of \( O(N^2) \), and the algorithm requires \( O(N) \) iterations for convergence. Thus, the overall complexity is \( O(N^3) \).
+
+\section{Other Insights}
+\subsection{Memory Usage}
+The memory usage of the QR algorithm is \( O(N^2)\), as it requires storing multiple matrices during each iteration: the matrix \( A_k \), the orthogonal matrix \( Q_k \), and the upper triangular matrix \( R_k \). For large matrices, this can become a significant consideration, but for matrices with \( N \leq 1000 \), the QR algorithm remains practical.
+
+\subsection{Convergence Rate}
+The convergence rate of the QR algorithm is typically fast for matrices with distinct eigenvalues. The Hessenberg reduction step helps by simplifying the matrix structure, allowing for more efficient QR decompositions. In general, the convergence is linear, and the method is effective for a wide range of matrices.
+
+\subsection{Suitability for Different Types of Matrices}
+The QR algorithm with Hessenberg reduction is suitable for:
+\begin{itemize}
+    \item Dense matrices: The algorithm performs well on dense matrices that do not exhibit any special structure.
+    \item Symmetric matrices: The algorithm converges very quickly for symmetric matrices, and the eigenvalues are guaranteed to be real.
+    \item Non-symmetric matrices: While the algorithm works for non-symmetric matrices, it may converge more slowly compared to symmetric matrices.
+\end{itemize}
+
+\section{Comparison of Algorithms}
+Several other methods exist for computing eigenvalues. Below is a brief comparison between the QR algorithm and other methods:
+
+\subsection{QR Algorithm vs. Jacobi Method}
+The Jacobi method is another iterative method for computing eigenvalues of symmetric matrices. While both algorithms are iterative and converge to the eigenvalues, the Jacobi method has a slower convergence rate than the QR algorithm, especially for large matrices.
+
+\subsection{QR Algorithm vs. Divide and Conquer}
+The divide and conquer method is faster than the QR algorithm for large, symmetric matrices, and has a time complexity of \( O(N^3) \). It is particularly effective for very large matrices and is used in specialized libraries for eigenvalue computation.
+
+\subsection{QR Algorithm vs. Lanczos Algorithm}
+The Lanczos algorithm is effective for sparse matrices, as it reduces the matrix to a much smaller size, making it computationally efficient. However, it does not guarantee all eigenvalues, and is not as general-purpose as the QR algorithm.
+
+
+\section{Error Analysis}
+\subsection{Sources of Error}
+- Finite precision arithmetic can introduce rounding errors.
+- Ill-conditioned matrices may slow convergence or yield inaccurate results.
+
+\subsection{Mitigation Strategies}
+- Using double-precision arithmetic minimizes rounding errors.
+- Matrix scaling improves numerical stability.
+
+\section{Advantages of the QR Algorithm}
+\subsection{General Benefits}
+The QR algorithm is robust and applicable to a wide range of matrices. It accurately computes both real and complex eigenvalues without requiring matrix symmetry.
+
+\subsection{Efficiency with Hessenberg Reduction}
+Hessenberg reduction decreases QR step complexity, preserving eigenvalues while simplifying computations.
+
+\subsection{Applications}
+\begin{itemize}
+    \item Engineering: Stability analysis and vibration modes.
+    \item Machine Learning: Principal Component Analysis (PCA).
+    \item Physics: Quantum mechanics and energy state computation.
+\end{itemize}
+
+\subsection{Future Directions}
+- GPU-based parallelization can accelerate computations.
+- Adaptive shift strategies improve convergence for clustered eigenvalues.
+
+\section{Conclusion}
+The QR algorithm with Hessenberg reduction is a powerful tool for eigenvalue computation. Its robustness, efficiency, and accuracy make it suitable for various applications in science and engineering.
+\section{References}
+\begin{itemize}
+    \item Trefethen, Lloyd N., and David Bau III. \textit{Numerical Linear Algebra.} SIAM, 1997.
+    \item Golub, Gene H., and Charles F. Van Loan. \textit{Matrix Computations.} Johns Hopkins University Press, 2013.
+    \item Google.com
+    \item Some AI generated models
+    \
+\end{itemize}
+\newpage
+\appendix
+\section{Code Listing}
+\small
+\verbatiminput{main.c}
+
+\end{document}
+ 
